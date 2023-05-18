@@ -1,3 +1,95 @@
-h1{color: coral;}
-body{background-color:bisque;}
-img{height: 300px;width: 480px;}
+
+h1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 182, 182);
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid rgb(36, 56, 233);
+    width: 300px;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom,#f00 #fff );
+    font-family: 'limelight',cursive;
+}
+
+h2{
+   padding: 10px;
+   margin-bottom: 30px;
+   border: 1px dotted rgb(153, 141, 169);
+   border-left: 10px solid rgb(182, 137, 201);
+   color:rgb(240, 179, 202)
+}
+
+body{
+    background-color:rgb(196, 222, 255);
+    background-image: url(../img/background.png);
+    background-repeat:repeat-x ;
+    background-attachment:fixed ;
+    background-size: 2000px 225px;
+}
+
+img{
+    height: 300px;width: 480px;
+}
+
+a{
+    color :rgb(178, 12, 255)
+}
+
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+#contents {
+    margin: 40px;
+    padding: 40px 80px;
+    border: 5px solid rgb(137, 128, 205);
+    background-color: rgb(255, 255, 255);
+}
+
+.more{
+    text-align: right;
+}
+.more::after{
+    content:url(../img/icon_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+    
+    
+}
+.h{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted rgb(red, green, blue);
+    border-left: 10px solid rgb(red, green, blue);
+    color: rgb(red, green, blue);
+}
+.h-sub span{
+    font-weight: normal;
+}
+
+#contents > section + section {
+    margin-top: 80px;
+}
+
+header,nav,footer{
+    text-align: center;
+}
+
+a[target="_blank"]::after{
+    content: url(../img/icon_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+a[href^="mailto:"]::after{
+   content: url(../img/icon_mail.png);
+   margin-left: 5px;
+   vertical-align: middle;
+}
+
