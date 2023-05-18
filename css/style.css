@@ -13,7 +13,7 @@ h1{
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     box-shadow: 2px 2px 20px rgb(0, 0, 0);
     background-image: linear-gradient(to bottom,#f00 #fff );
-    font-family: 'limelight',cursive;
+    font-family:'limelight',cursive;
 }
 
 h2{
@@ -29,7 +29,11 @@ body{
     background-image: url(../img/background.png);
     background-repeat:repeat-x ;
     background-attachment:fixed ;
-    background-size: 2000px 225px;
+    background-size: 2000px 150px;
+}
+
+header,nav,footer{
+    text-align: center;
 }
 
 img{
@@ -45,16 +49,10 @@ a:hover{
     text-decoration: none;
 }
 
-#contents {
-    margin: 40px;
-    padding: 40px 80px;
-    border: 5px solid rgb(137, 128, 205);
-    background-color: rgb(255, 255, 255);
-}
-
 .more{
     text-align: right;
 }
+
 .more::after{
     content:url(../img/icon_arrow.png);
     margin-left: 3px;
@@ -62,6 +60,7 @@ a:hover{
     
     
 }
+
 .h{
     padding: 10px;
     margin-bottom: 30px;
@@ -69,17 +68,31 @@ a:hover{
     border-left: 10px solid rgb(red, green, blue);
     color: rgb(red, green, blue);
 }
+
 .h-sub span{
     font-weight: normal;
 }
 
-#contents > section + section {
+section+section {
     margin-top: 80px;
 }
 
-header,nav,footer{
-    text-align: center;
+.h-sub{
+    padding: 10px;
+    background-color: rgb(193,140,157);
+    color: rgb(78, 68, 136);
+    border-radius: 10PX;
+    box-shadow: 0,0,5px,2px rgb(127, 154, 196) inset;
 }
+
+#contents {
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 5px solid rgb(137, 128, 205);
+    background-color: rgb(255, 255, 255);
+}
+
 
 a[target="_blank"]::after{
     content: url(../img/icon_blank.png);
@@ -93,3 +106,38 @@ a[href^="mailto:"]::after{
    vertical-align: middle;
 }
 
+.menu li{
+    list-style-type: none;
+    margin: 0 10px;
+    display: inline-block;
+    width: 200px;
+}
+
+.menu a{
+    background: rgb(255, 255, 255);
+    color: rgb(155, 107,255);
+    padding: 10px;
+    display: block;
+    border-radius:10px ;
+    text-decoration: none;
+}
+
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+
+.imgR{
+    float: right;
+    margin-right: 20px;
+}
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.clear{
+    clear: both;
+}
